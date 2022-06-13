@@ -8,5 +8,6 @@ function foo() {
 }
 
 const sayHello = function() {
+    return " "
 
 }
