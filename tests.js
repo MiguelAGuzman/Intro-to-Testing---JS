@@ -23,16 +23,26 @@ describe("foo", function() {
     });
 })
 
-describe('sayHello', function() {
-    it('should be a defined function', function() {
-        expect(typeof sayHello).toBe('function');
-    });
-});
 
-describe('sayHello', function() {
+
+describe('sayHello testing suite', function() {
+    it('should return function', function() {
+        expect(typeof sayHello).toBe("function");
+    });
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
+    it("Jane", function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it("Alex", function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it("Pat", function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    })
 });
+
+
 
 

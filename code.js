@@ -7,7 +7,8 @@ function foo() {
     return 2
 }
 
-const sayHello = function() {
-    return " "
 
+function sayHello(name) {
+    return "Hello, " + name + "!";
 }
+console.log(sayHello("Alex"))
