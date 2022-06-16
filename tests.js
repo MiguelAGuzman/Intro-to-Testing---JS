@@ -41,11 +41,33 @@ describe('sayHello testing suite', function() {
     it("Pat", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
-    it(true, function() {
-        expect(sayHello(true)).toBe("Hello, World!");
-    })
+
+    expect(sayHello(true)).toBe("Hello, World!");
+
+    expect(sayHello()).toBe("Hello, World!");
+
+    expect(sayHello(false)).toBe("Hello, World!");
 });
 
 
-
+describe('isFive testing suite', function() {
+    it('should return function', function() {
+        expect(typeof isFive).toBe("function");
+    })
+    it(5, function () {
+        expect(isFive(5).toBe(true));
+    })
+    it("5", function () {
+        expect(isFive("5").toBe(true));
+    });
+    it("7", function () {
+        expect(isFive("7").toBe(false));
+    })
+    it(3, function () {
+        expect(isFive(3).toBe(false));
+    })
+    it("number", function () {
+        expect(isFive("number").toBe(false));
+    })
+});
 
