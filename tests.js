@@ -39,7 +39,10 @@ describe('sayHello testing suite', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
     it("Pat", function() {
-        expect(sayHello("Pat")).toBe("Hello, Pat!")
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    })
+    it(true, function() {
+        expect(sayHello(true)).toBe("Hello, World!");
     })
 });
 

@@ -8,7 +8,16 @@ function foo() {
 }
 
 
-function sayHello(name) {
-    return "Hello, " + name + "!";
+const sayHello = (name) => {
+    // if(name === true) {
+    //     return "Hello World!";
+    // }
+    if (typeof name != "string") {
+        return "Hello World!";
+    // } else if(!isNaN(name)) {
+    //     return "Hello World!";
+    } else {
+        return "Hello, " + name + "!";
+    }
 }
-console.log(sayHello("Alex"))
+console.log(sayHello(true));
