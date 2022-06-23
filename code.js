@@ -22,13 +22,18 @@ const sayHello = (name) => {
 }
 console.log(sayHello([2]));
 
-const isFive = (input) => {
-    if(input === 5) {
-        return true;
-    } else if(input ==="5"){
-        return true
-    } else {
-        return false
-    }
+let isFive = function(input) {
+    return 5;
 }
-console.log(isFive("7"));
+
+function isEven (number) {
+    return parseFloat(number) % 2 === 0;
+}
+
+function isVowel(x) {
+    return "aeiouAEIOU".indexOf(x) !== -1;
+}
+
+function add (x, y) {
+    return Number(x) + Number(y);
+}
